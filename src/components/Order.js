@@ -269,7 +269,7 @@ const Order = ({id, title, price, details, img}) => {
                                         <div className='burger_details'>
                                             <div className='details'>
                                                 <h2>{drinkData.title}</h2>
-                                                <h2 className='price'>${`${drinkData.price} USD `}</h2>
+                                                <h2 className='price'>${drinkData.price} USD</h2>
                                             </div>
                                             <p>{drinkData.details}</p>
                                             <div className='burger_btn'>
@@ -286,37 +286,23 @@ const Order = ({id, title, price, details, img}) => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id='foot'>
                 <footer>
-                    <div className='footer_details'>
+                    <div className='foot_det'>
+                            <p>Get most out of our <span>restaurant</span></p>
+                        <div className='footer_details'>
+                            <butto className='hero_btn'>Subscribe</butto>
+                        </div>
+                    </div>
+                    <div className='footer_nav'>
                         <img src='./images/logo.svg' className='logo' />
-                        <p>Takeaway & Delivery template
-                        for small - medium businesses.</p>
-                    </div>
-                    <div className='grid-container'>
-                    <div className='location'>
-                        <h1>Comapny</h1>
-                        <a href='/'><p>Home</p></a>
-                        <a href='/order'><p>Order</p></a>
-                        <a href='/faq'><p>FAQ</p></a>
-                        <a href=''><p>Contact</p></a>
-                        <a href='/company'><p>Company</p></a>
-                    </div>
-                    <div className='quick'>
-                            <h1>Template</h1>
-                        <div className='quick1'>
-                            <p><a href='#'>Style Guide</a></p>
-                            <p><a href='#'>Changelog</a></p>
-                            <p><a href='#'>Licence</a></p>
-                            <p><a href='#'>Webflow University</a></p>
+                        <div className='link'>
+                            <Link to="/"><a href=''><h2>Home</h2></a></Link>
+                            <Link to= "/order"><a href=''><h2>Order</h2></a></Link>
+                            <a href='./company'><h2>Company</h2></a>
+                            <a href='/faq'><h2>FAQ</h2></a>
+                            <a href=''><h2 onClick={sendEmail}>Contact</h2></a>
                         </div>
-                    </div>
-                    <div className='quick'>
-                            <h1>Flowbase</h1>
-                        <div className='quick1'>
-                            <p><a href='#'>More Cloneables</a></p>
-                        </div>
-                    </div>
                     </div>
                 </footer>
             </section>

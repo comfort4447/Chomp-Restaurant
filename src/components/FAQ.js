@@ -152,18 +152,13 @@ const Order = () => {
 
             <section id='menu'>
                 <div className='menu_container'>
-                    {/* <div className='menu_text'>
-                        <h1>Browse our menu</h1>
-                        <p>Use our menu to place an order online, or <a href='#'>phone</a> our store to
-                        place a pickup order. Fast and fresh food.</p>
-                    </div> */}
                     <div className='menu_options'>
                         <Box sx={{ width: '100%' }}>
                             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                                 <Tabs className='tabs' value={value} onChange={handleChange}  aria-label="full width tabs example" variant="fullWidth">
-                                    <Tab label="Our Food" {...a11yProps(0)} />
-                                    <Tab label="Our Delivery" {...a11yProps(1)} />
-                                    <Tab label="Our Company" {...a11yProps(2)} />
+                                    <Tab label="Food" {...a11yProps(0)} />
+                                    <Tab label="Delivery" {...a11yProps(1)} />
+                                    <Tab label="Company" {...a11yProps(2)} />
                                 </Tabs>
                             </Box>
                             <TabPanel value={value} index={0}>
@@ -185,38 +180,28 @@ const Order = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id='foot'>
                 <footer>
-                    <div className='footer_details'>
+                    <div className='foot_det'>
+                        <div className='foot1'>
+                            
+                            <p>Get most out of our <span>restaurant</span></p>
+                        </div>
+                        <div className='footer_details'>
+                            <butto className='hero_btn'>Subscribe</butto>
+                        </div>
+                    </div>
+                    <div className='footer_nav'>
                         <img src='./images/logo.svg' className='logo' />
-                        <p>Takeaway & Delivery template
-                        for small - medium businesses.</p>
-                    </div>
-                    <div className='grid-container'>
-                    <div className='location'>
-                        <h1>Comapny</h1>
-                        <a href='/'><p>Home</p></a>
-                        <a href='/order'><p>Order</p></a>
-                        <a href='/faq'><p>FAQ</p></a>
-                        <a href=''><p>Contact</p></a>
-                        <a href='/company'><p>Company</p></a>
-                    </div>
-                    <div className='quick'>
-                            <h1>Template</h1>
-                        <div className='quick1'>
-                            <p><a href='#'>Style Guide</a></p>
-                            <p><a href='#'>Changelog</a></p>
-                            <p><a href='#'>Licence</a></p>
-                            <p><a href='#'>Webflow University</a></p>
+                        <div className='link'>
+                            <Link to="/"><a href=''><h2>Home</h2></a></Link>
+                            <Link to= "/order"><a href=''><h2>Order</h2></a></Link>
+                            <a href='./company'><h2>Company</h2></a>
+                            <a href='/faq'><h2>FAQ</h2></a>
+                            <a href=''><h2 onClick={sendEmail}>Contact</h2></a>
                         </div>
                     </div>
-                    <div className='quick'>
-                            <h1>Flowbase</h1>
-                        <div className='quick1'>
-                            <p><a href='#'>More Cloneables</a></p>
-                        </div>
-                    </div>
-                    </div>
+                    
                 </footer>
             </section>
         </>

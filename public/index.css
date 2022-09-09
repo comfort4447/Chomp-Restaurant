@@ -188,11 +188,6 @@ ul a {
 #menu {
   padding-left: 40px;
   padding-right: 40px;
-  
-}
-.menu_options {
-  background: url("../images/background2.png");
-  background-repeat: no-repeat;
 }
 .menu_container {
   margin-top: 150px;
@@ -401,7 +396,6 @@ input[type=number]{
   padding-top: 150px;
   padding-left: 40px;
   padding-right: 40px;
-  background: url("../images/background2.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -477,65 +471,51 @@ input[type=number]{
   gap: 20px;
 }
 
+#foot {
+  width: 100%;
+  margin: auto;
+}
 
-
-
+.footer_nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.link {
+  display: flex;
+  gap: 30px;
+}
+.link a {
+  text-decoration: none;
+  color: #546285;
+}
 footer {
   padding-left: 40px;
   padding-right: 40px;
-  display: flex;
-  background: url("../images/background2.png");
-
-  /* gap: 300px; */
+  display: block;
+  justify-content: space-around;
   margin-top: 150px;
   margin-bottom: 100px;
 }
+.foot_det {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.foot_det span {
+  color: #35b8be;
+}
+.foot_det p {
+  text-align: center;
+  margin: auto;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
 .footer_details p {
   width: 250px;
-  margin-left: 50px;
   color: #aaaaaa;
 }
-.grid-container {
-  display: flex;
-  gap: 70px;
-}
-.grid-container h1{
-  margin-bottom: 20px;
-  color: #1B1C1E;
-  font-size: 20px;
-}
-.grid-container p{
-  font-size: 16px;
-}
-.quick1 a {
-  display: block;
-}
-.quick1 a {
-  color: #546285;
-  text-decoration: none;
-}
-.location {
-  color: #546285;
-}
-.location a {
-  text-decoration: none;
-  color: #546285;
-}
-.contact {
-  color: #546285;
-}
-.follow {
-  color: #546285;
-}
-.copy p {
-  display: block;
-  align-items: center;
-  text-align: center;
-  color: #010145;
-}
-.copy span {
-  color: rgb(2, 173, 2);
-}
+
 
 
 
@@ -631,8 +611,28 @@ footer {
     text-align: center;
     padding: 15px 45px 15px 45px;
   }
+  .burger_details {
+    text-align: center;
+    margin: auto;
+  }
+  .details {
+    display: block;
+  }
+  .details h2{
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+  }
   .burger_menu_details {
     display: block;
+  }
+  .burger_btn .hero_btn3{
+    text-align: center;
+    margin: auto;
+  }
+  .burger_btn .hero_btn1 {
+    text-align: center;
+    margin: auto;
   }
   .contact_details {
     display: block;
@@ -643,6 +643,18 @@ footer {
   footer {
     display: block;
   }
+  .work_section .work_sectionH1 {
+    width: 450px;
+    margin-left: -50px;
+  }
+  .foot_det p {
+    width: 550px;
+  }
+  .footer_details .hero_btn {
+    text-align: center;
+    margin: auto;
+    margin-left: 200px;
+  } 
 }
 
 /* TABLET SCREEN  */
@@ -712,5 +724,8 @@ footer {
   .contact_text {
     text-align: center;
     margin: auto;
+  }
+  .footer_nav {
+    display: none;
   }
 }
