@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faStar, faBars } from '@fortawesome/fontawesome-free-solid'
-import { WorkCard } from '../Helpers/work';
+import { faBars } from '@fortawesome/fontawesome-free-solid'
 import { BurgerData } from '../Helpers/BurgerData';
 import { Drinks } from '../Helpers/Drinks';
 import { Sides } from '../Helpers/Sides';
@@ -65,21 +64,12 @@ function TabPanel(props) {
     };
   }
 const Order = ({id, title, price, details, img}) => {
-    const getCartTotal = (basket) => 
-    basket?.reduce((amount, item) => item.price + amount, 0);
+
+    
     const [showLinks, setShowLinks] = useState(false)
 
-    const { addItem } = useCart();
 
-    const getTotalItems = () => {
-
-    }
-    const handleAddToCart = () => {
-        
-    }
-    const handleRemoveToCart = () => {
-        
-    }
+    
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -89,6 +79,12 @@ const Order = ({id, title, price, details, img}) => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
     const [{basket}, dispatch] = useStateValue()
+
+
+    const sendEmail = () => {
+        window.open("mailto:support@example.com?subject=SendMail&body=Description");
+      };
+
 
     return (
         <>
@@ -135,7 +131,7 @@ const Order = ({id, title, price, details, img}) => {
                             <Link to= "/order"><a href=''><h2>Order</h2></a></Link>
                             <a href='./company'><h2>Company</h2></a>
                             <a href='/faq'><h2>FAQ</h2></a>
-                            <a href=''><h2>Contact</h2></a>
+                            <a href=''><h2 onClick={sendEmail}>Contact</h2></a>
                         </div>
                             <button onClick={() => setShowLinks (!showLinks)}>
                             <FontAwesomeIcon size='2x' icon={faBars}/></button>
@@ -153,7 +149,10 @@ const Order = ({id, title, price, details, img}) => {
 
             <section id='order1'>
                 <div className='order_text1'>
+                <div data-aos="fade-up"
+                    data-aos-duration="3000">
                     <h1>Get your food <span>delivered</span>, or <span>pick-up</span> in store.</h1>
+                    </div>
                 </div>
             </section>
 
@@ -286,6 +285,40 @@ const Order = ({id, title, price, details, img}) => {
                         </Box>
                     </div>
                 </div>
+            </section>
+            <section>
+                <footer>
+                    <div className='footer_details'>
+                        <img src='./images/logo.svg' className='logo' />
+                        <p>Takeaway & Delivery template
+                        for small - medium businesses.</p>
+                    </div>
+                    <div className='grid-container'>
+                    <div className='location'>
+                        <h1>Comapny</h1>
+                        <a href='/'><p>Home</p></a>
+                        <a href='/order'><p>Order</p></a>
+                        <a href='/faq'><p>FAQ</p></a>
+                        <a href=''><p>Contact</p></a>
+                        <a href='/company'><p>Company</p></a>
+                    </div>
+                    <div className='quick'>
+                            <h1>Template</h1>
+                        <div className='quick1'>
+                            <p><a href='#'>Style Guide</a></p>
+                            <p><a href='#'>Changelog</a></p>
+                            <p><a href='#'>Licence</a></p>
+                            <p><a href='#'>Webflow University</a></p>
+                        </div>
+                    </div>
+                    <div className='quick'>
+                            <h1>Flowbase</h1>
+                        <div className='quick1'>
+                            <p><a href='#'>More Cloneables</a></p>
+                        </div>
+                    </div>
+                    </div>
+                </footer>
             </section>
         </>
     );

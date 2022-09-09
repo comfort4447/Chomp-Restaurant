@@ -480,9 +480,62 @@ input[type=number]{
 
 
 
+footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  background: url("../images/background2.png");
 
-
-
+  /* gap: 300px; */
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.footer_details p {
+  width: 250px;
+  margin-left: 50px;
+  color: #aaaaaa;
+}
+.grid-container {
+  display: flex;
+  gap: 70px;
+}
+.grid-container h1{
+  margin-bottom: 20px;
+  color: #1B1C1E;
+  font-size: 20px;
+}
+.grid-container p{
+  font-size: 16px;
+}
+.quick1 a {
+  display: block;
+}
+.quick1 a {
+  color: #546285;
+  text-decoration: none;
+}
+.location {
+  color: #546285;
+}
+.location a {
+  text-decoration: none;
+  color: #546285;
+}
+.contact {
+  color: #546285;
+}
+.follow {
+  color: #546285;
+}
+.copy p {
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: #010145;
+}
+.copy span {
+  color: rgb(2, 173, 2);
+}
 
 
 
@@ -586,6 +639,9 @@ input[type=number]{
   }
   .order_text1 {
     width: 500px;
+  }
+  footer {
+    display: block;
   }
 }
 
