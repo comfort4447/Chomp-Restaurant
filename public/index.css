@@ -214,14 +214,13 @@ ul a {
 }
 .menu_img {
   width: 100%;
-  border-radius: 10px;
-}
-.image {
-  width: 50%;
   margin: auto;
+  text-align: center;
+  border-radius: 10px;
 }
 .burger_details {
   text-align: left;
+  display: block;
 }
 .burger_menu {
   margin: 0 auto;
@@ -231,12 +230,9 @@ ul a {
 }
 .burger_menu_details {
   display: flex;
+  margin: auto;
+  width: auto;
   gap: 20px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-  padding: 25px 25px 25px 25px;
-}
-.burger_details {
-  display: block;
 }
 .burger_details h2 {
   font-size: 20px;
@@ -305,6 +301,7 @@ input[type=number]{
   font-size: 55px;
   color: #35b8be;
   width: 550px;
+  margin-top: 150px;
 }
 .order_text p {
   font-size: 18px;
@@ -471,50 +468,21 @@ input[type=number]{
   gap: 20px;
 }
 
-#foot {
-  width: 100%;
-  margin: auto;
-}
-
 .footer_nav {
   display: flex;
-  justify-content: space-around;
-  margin-top: 100px;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 .link {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .link a {
   text-decoration: none;
   color: #546285;
 }
-footer {
-  padding-left: 40px;
-  padding-right: 40px;
-  display: block;
-  justify-content: space-around;
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-.foot_det {
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-.foot_det span {
-  color: #35b8be;
-}
-.foot_det p {
-  text-align: center;
-  margin: auto;
-  font-size: 55px;
-  margin-bottom: 30px;
-}
-.footer_details p {
-  width: 250px;
-  color: #aaaaaa;
-}
+
 
 
 
@@ -605,7 +573,7 @@ footer {
     margin: auto;
   }
   .tabs {
-    width: 500px;
+    width: 450px;
   }
   .tabs button {
     text-align: center;
@@ -623,8 +591,16 @@ footer {
     margin-top: 20px;
     margin: auto;
   }
+  .burger_menu {
+    grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+  }
+  .menu_img {
+    text-align: center;
+  }
   .burger_menu_details {
     display: block;
+    width: auto;
+    padding: 15px 45px 15px 45px;
   }
   .burger_btn .hero_btn3{
     text-align: center;
@@ -640,20 +616,14 @@ footer {
   .order_text1 {
     width: 500px;
   }
-  footer {
-    display: block;
-  }
   .work_section .work_sectionH1 {
     width: 450px;
     margin-left: -50px;
   }
-  .foot_det p {
-    width: 500px;
+  footer .footer_nav {
+    width: 650px;
+    margin-left: -50px;
   }
-  .footer_details .hero_btn {
-    text-align: center;
-    margin: auto;
-  } 
 }
 
 /* TABLET SCREEN  */
@@ -725,6 +695,14 @@ footer {
     margin: auto;
   }
   .footer_nav {
-    display: none;
+    display: block;
   }
+  footer {
+    margin: auto;
+    text-align: center;
+  }
+  .link {
+    display: block;
+  }
+  
 }

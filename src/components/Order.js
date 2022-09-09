@@ -157,13 +157,7 @@ const Order = ({id, title, price, details, img}) => {
             </section>
 
             <section id='menu'>
-            
                 <div className='menu_container'>
-                    {/* <div className='menu_text'>
-                        <h1>Browse our menu</h1>
-                        <p>Use our menu to place an order online, or <a href='#'>phone</a> our store to
-                        place a pickup order. Fast and fresh food.</p>
-                    </div> */}
                     <div className='menu_options'>
                         <Box sx={{ width: '100%' }}>
                             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -190,7 +184,6 @@ const Order = ({id, title, price, details, img}) => {
                                         }
                                         return (
                                             <div className='burger_menu_details'>
-                                                
                                                 <div className='image'>
                                                     <img className='menu_img' src={`../images/${burgerData.img}`} />
                                                 </div>
@@ -288,12 +281,12 @@ const Order = ({id, title, price, details, img}) => {
             </section>
             <section id='foot'>
                 <footer>
-                    <div className='foot_det'>
+                    {/* <div className='foot_det'>
                             <p>Get most out of our <span>restaurant</span></p>
                         <div className='footer_details'>
                             <butto className='hero_btn'>Subscribe</butto>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='footer_nav'>
                         <img src='./images/logo.svg' className='logo' />
                         <div className='link'>

@@ -182,7 +182,7 @@ const Order = () => {
             </section>
             <section id='foot'>
                 <footer>
-                    <div className='foot_det'>
+                    {/* <div className='foot_det'>
                         <div className='foot1'>
                             
                             <p>Get most out of our <span>restaurant</span></p>
@@ -190,7 +190,7 @@ const Order = () => {
                         <div className='footer_details'>
                             <butto className='hero_btn'>Subscribe</butto>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='footer_nav'>
                         <img src='./images/logo.svg' className='logo' />
                         <div className='link'>
