@@ -624,6 +624,9 @@ input[type=number]{
     width: 650px;
     margin-left: -50px;
   }
+  .burger_menu1 {
+    width: 100%;
+  }
 }
 
 /* TABLET SCREEN  */

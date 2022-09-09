@@ -21,7 +21,7 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
             {/* aria-label="full width tabs example" variant="fullWidth" */}
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>
           Do you offer any vegan options?
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
@@ -46,7 +46,7 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>Do you offer any gluten free options?s
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>Do you offer any gluten free options?s
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>
             You are currently not an owner
@@ -72,7 +72,7 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>
           Can I clone these sections?
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>
@@ -99,7 +99,7 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>
             Why is Webflow so amazing?
           </Typography>
         </AccordionSummary>
@@ -123,7 +123,7 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>
           Do we need to write a business plan?
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>
@@ -152,7 +152,7 @@ export default function ControlledAccordions() {
           aria-label="full width tabs example" 
           variant="fullWidth"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, color: '#35b8be' }}>
+          <Typography sx={{ width: 'auto', flexShrink: 0, color: '#35b8be' }}>
           How can we get funding for our start up?
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>
